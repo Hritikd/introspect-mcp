@@ -1,0 +1,14 @@
+{
+  "//": "Copy into ~/.cursor/mcp.json (global) or .cursor/mcp.json (per-project).",
+  "//recommended": "Point command at YOUR project's venv python so the server sees your installed deps.",
+  "mcpServers": {
+    "introspect": {
+      "command": "uvx",
+      "args": ["introspect-mcp"]
+    },
+    "introspect-pinned-to-project-venv": {
+      "command": "./.venv/bin/python",
+      "args": ["-m", "introspect_mcp"]
+    }
+  }
+}
